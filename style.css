@@ -1,0 +1,153 @@
+:root {
+  --cream: #faf6f0;
+  --warmchampagne: #F7E7CE;
+  --softblush: #E8D5C4;
+  --deeptaupe: #463622;
+  --lightertaupe: #A0896B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+  background: var(--cream);
+  color: var(--deeptaupe);
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 2rem;
+  background: var(--softblush);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .8rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(201, 183, 138, 0.3);
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--deeptaupe);
+}
+
+a:hover {
+  color: var(--lightertaupe);
+  transition: 200ms ease;
+}
+
+.hoverLift:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+}
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.containerRecipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--warmchampagne);
+  border-radius: 20px;
+  margin: 2rem 0;
+  margin-bottom: 15rem;
+}
+
+.link {
+  position: relative;
+  padding-bottom: 10rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--deeptaupe);
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 1.6rem 10rem;
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+.link h4 {
+  background: rgba(250, 246, 240, 0.5);
+  border-radius: 40px;
+  padding: 1rem;
+}
+
+.lasagna {
+  background-image: url("recipes/lasagna/lasagna.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.ravioli {
+  background-image: url("recipes/ravioli/ravioli.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.spaghetti {
+  background-image: url("recipes/spaghetti/spaghetti.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.fettuccine{
+  background-image: url("recipes/fettuccine/fettuccine.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--warmchampagne);
+  border-top: 1px solid rgba(201, 183, 138, 0.3);
+  padding: 1rem 1rem 2rem 1rem; /* simplified padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* changed from evenly to center */
+  align-items: center;
+  gap: 2rem;
+  z-index: 1000; /* ensures footer stays on top */
+}
+
+footer nav a {
+  text-decoration: none;
+  color: var(--deeptaupe);
+  font-weight: 900;
+}

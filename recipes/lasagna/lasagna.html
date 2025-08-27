@@ -2,24 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lasagna</title>
+    <title>Layers of Love</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/recipes.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Lasagna Recipe</h1>
-    <a href="../index.html">Home</a>
+    <div>
+      <nav class="navbar">
+        <a href="/index.html">
+          <h1 class="hoverLift">Odin Recipes</h1>
+        </a>
+        <a href="/about.html">
+          <h1 class="hoverLift">About</h1>
+        </a>
+      </nav>
+    </div>
   </header>
   <main>
       <section>
-        <img src="recipes/lasagna/lasagna.png" alt="lasagna_image">
-        <h1>Description</h1>
-        <p>This is the description of the recipe</p>
-        <p>This is the second description paragraph of the image XD.</p>
-        <h2>Ingredients</h2>
-        <ul>
-          <li><a href="recipes/lasagna.html">Lasagna</a></li>
-        </ul>
+        <div class="recipeImage">
+          <h2>Layers of Love</h2>
+          <img src="lasagna.png" alt="lasagna_image">
+        </div>
+        <div class="recipeDesc">
+          <h1>Description</h1>
+          <p>A rich, hearty, and comforting Italian classic, this lasagna layers tender pasta sheets with a savory meat sauce, creamy ricotta filling, and gooey melted cheese. Perfect for family dinners or special occasions, it’s the ultimate crowd-pleaser that combines bold flavors and a beautiful golden top.</p>
+        </div>
+        <div class="recipeIng">
+          <h2>Ingredients (Serves 6-8)</h2>
+          <ul>
+            <li>12 lasagna noodles</li>
+            <li>1 lb (450g)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>24 oz (680g) marinara or tomato sauce</li>
+            <li>1 can (14.5 oz / 410g) crushed tomatoes</li>
+            <li>2 tsp Italian seasoning</li>
+            <li>Salt and pepper, to taste</li>
+            <li>15 oz (425g) ricotta cheese</li>
+            <li>1 large egg</li>
+            <li>2 cups shredded mozzarella cheese</li>
+            <li>1/2 cup grated Parmesan cheese</li>
+            <li>Fresh basil or parsley for garnish (optional)</li>
+          </ul>
+        </div>
+        <div class="recipeDir">
+          <h2>Directions</h2>
+          <ol>
+            <li>Preheat oven to 375°F (190°C).</li>
+            <li>Cook lasagna noodles according to package instructions, drain, and set aside.</li>
+            <li>In a large skillet, cook ground beef (or sausage) with onion and garlic until browned. Drain excess fat.</li>
+            <li>Stir in marinara, crushed tomatoes, Italian seasoning, salt, and pepper. Simmer for 10–15 minutes.</li>
+            <li>In a bowl, mix ricotta cheese with egg until smooth.</li>
+            <li>In a 9x13-inch baking dish, spread a thin layer of meat sauce on the bottom.</li>
+            <li>Layer 3–4 noodles on top, then spread half of the ricotta mixture, sprinkle 1/3 of mozzarella, and add more meat sauce. Repeat layers, ending with noodles topped with remaining sauce and mozzarella. Sprinkle Parmesan on top.</li>
+            <li>Cover with foil (to prevent sticking, tent foil slightly) and bake for 25 minutes.</li>
+            <li>Remove foil and bake an additional 20–25 minutes, until cheese is golden and bubbly.</li>
+            <li>Let stand 10–15 minutes before slicing. Garnish with fresh basil or parsley if desired.</li>
+          </ol>
+        </div>
       </section>
   </main>
+  <footer>
+    <p>&copy; 2025 Odin Recipes | Made with ❤️ during The Odin Project Bootcamp</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a>
+    </nav>
+  </footer>
 </body>
 </html>
